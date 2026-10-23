@@ -1,0 +1,103 @@
+/* ==========================================================================
+   DESIGN TOKENS — ANTIGRAVITY ARGON DESIGN SYSTEM
+   Standardized variables for light and dark palettes, typography, and spacing
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Outfit:wght@300;400;500;600;700&family=Syne:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  /* Dark Mode Default Tokens (High-End Cyberpunk / Editorial Luxury) */
+  --color-primary: #00F5A0;
+  --color-primary-variant: #00D8F6;
+  --color-secondary: #6366F1;
+  --color-accent: #00F5A0;
+  --color-accent-glow: rgba(0, 245, 160, 0.28);
+  
+  --color-background: #080B10;
+  --color-background-warm: #0C1017;
+  --color-surface: #111622;
+  --color-surface-elevated: #171E2E;
+  --color-surface-translucent: rgba(17, 22, 34, 0.72);
+  
+  --color-on-primary: #05080E;
+  --color-on-surface: #F3F4F6;
+  --color-on-surface-muted: #9CA3AF;
+  --color-on-surface-faint: #6B7280;
+  
+  --color-border: rgba(255, 255, 255, 0.08);
+  --color-border-strong: rgba(255, 255, 255, 0.18);
+  --color-border-accent: rgba(0, 245, 160, 0.35);
+
+  --color-error: #EF4444;
+  --color-on-error: #FFFFFF;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  
+  /* Typography Scale */
+  --font-editorial: 'Instrument Serif', Georgia, serif;
+  --font-display: 'Syne', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Font Weights */
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --fw-heavy: 800;
+
+  /* Motion & Easing */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out-cubic: cubic-bezier(0.65, 0, 0.35, 1);
+  --transition-fast: 150ms var(--ease-out-expo);
+  --transition-normal: 280ms var(--ease-out-expo);
+  --transition-slow: 600ms var(--ease-out-expo);
+
+  /* Elevation Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.45);
+  --shadow-lg: 0 20px 45px rgba(0, 0, 0, 0.65);
+  --shadow-glow: 0 0 35px var(--color-accent-glow);
+
+  /* Radius Tokens */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-full: 9999px;
+
+  /* Canvas and Visual Effects */
+  --glass-blur: blur(16px);
+  --hero-gradient: radial-gradient(circle at 50% 20%, rgba(0, 245, 160, 0.08) 0%, rgba(0, 216, 246, 0.03) 45%, transparent 70%);
+}
+
+[data-theme="light"] {
+  /* Light Mode Tokens (Pristine Architectural Swiss Studio) */
+  --color-primary: #00875A;
+  --color-primary-variant: #0065FF;
+  --color-secondary: #4F46E5;
+  --color-accent: #00875A;
+  --color-accent-glow: rgba(0, 135, 90, 0.22);
+  
+  --color-background: #F8FAFC;
+  --color-background-warm: #F1F5F9;
+  --color-surface: #FFFFFF;
+  --color-surface-elevated: #F1F5F9;
+  --color-surface-translucent: rgba(255, 255, 255, 0.85);
+  
+  --color-on-primary: #FFFFFF;
+  --color-on-surface: #0F172A;
+  --color-on-surface-muted: #475569;
+  --color-on-surface-faint: #64748B;
+  
+  --color-border: rgba(15, 23, 42, 0.1);
+  --color-border-strong: rgba(15, 23, 42, 0.22);
+  --color-border-accent: rgba(0, 135, 90, 0.4);
+
+  --shadow-sm: 0 2px 6px rgba(15, 23, 42, 0.06);
+  --shadow-md: 0 10px 20px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 20px 40px rgba(15, 23, 42, 0.12);
+  --shadow-glow: 0 0 30px rgba(0, 135, 90, 0.15);
+
+  --hero-gradient: radial-gradient(circle at 50% 20%, rgba(0, 135, 90, 0.07) 0%, rgba(0, 101, 255, 0.04) 45%, transparent 70%);
+}

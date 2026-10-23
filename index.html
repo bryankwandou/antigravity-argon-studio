@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Antigravity Argon — Sovereign Web Architecture & Enterprise Digital Systems</title>
+  <meta name="description" content="A private digital atelier for high-velocity enterprise platforms, hyper-responsive web applications, and mission-critical cloud interfaces. Handcrafted with mathematical precision.">
+  <meta name="theme-color" content="#080B10">
+  
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Antigravity Argon — Sovereign Web Architecture">
+  <meta property="og:description" content="A private digital atelier for high-velocity enterprise platforms, hyper-responsive web applications, and mission-critical cloud interfaces.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/src/styles/main.css">
+</head>
+<body>
+
+  <!-- Custom Magnetic Cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursor-ring" aria-hidden="true"></div>
+
+  <!-- Boot Preloader Sequence -->
+  <div id="preloader" role="status" aria-live="polite">
+    <div class="preloader-header">
+      <svg viewBox="0 0 32 32" width="28" height="28" fill="none" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="#111622" stroke="rgba(255,255,255,0.12)"/>
+        <circle cx="16" cy="16" r="8.5" stroke="#00F5A0" stroke-width="1.5"/>
+        <circle cx="16" cy="16" r="4.2" stroke="#00D8F6" stroke-width="1.2"/>
+        <circle cx="16" cy="16" r="1.8" fill="#00F5A0"/>
+      </svg>
+      <span class="preloader-brand">Antigravity Argon</span>
+    </div>
+    <div class="preloader-center">
+      <h2 class="preloader-title" id="preloader-title">System Initialization</h2>
+      <div class="preloader-counter" id="preloader-counter">00</div>
+    </div>
+    <div class="preloader-track" aria-hidden="true">
+      <div class="preloader-bar" id="preloader-bar"></div>
+    </div>
+  </div>
+
+  <!-- Floating Command Bar (Navbar) -->
+  <header class="site-header">
+    <nav class="nav-bar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-link" id="nav-brand-link">
+        <svg viewBox="0 0 32 32" class="brand-icon" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="#111622" stroke="rgba(255,255,255,0.15)"/>
+          <circle cx="16" cy="16" r="8.5" stroke="#00F5A0" stroke-width="1.5"/>
+          <circle cx="16" cy="16" r="4.2" stroke="#00D8F6" stroke-width="1.2"/>
+          <circle cx="16" cy="16" r="1.8" fill="#00F5A0"/>
+        </svg>
+        <span class="brand-title" id="nav-brand-title">Antigravity Argon</span>
+        <span class="brand-badge" id="nav-brand-badge">Atelier</span>
+      </a>
+
+      <ul class="nav-links" id="desktop-nav-links">
+        <li><a href="#modules" class="nav-item-btn" id="nav-link-modules">Architecture</a></li>
+        <li><a href="#simulator" class="nav-item-btn" id="nav-link-simulator">Live Stack</a></li>
+        <li><a href="#cases" class="nav-item-btn" id="nav-link-cases">Case Records</a></li>
+        <li><a href="#methodology" class="nav-item-btn" id="nav-link-process">Methodology</a></li>
+        <li><a href="#tiers" class="nav-item-btn" id="nav-link-tiers">Partnership</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button type="button" class="lang-btn" id="lang-toggle-btn" aria-label="Switch Language">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <span id="lang-label">EN / ID</span>
+        </button>
+
+        <!-- Theme Switcher -->
+        <button type="button" class="icon-btn" id="theme-toggle-btn" aria-label="Toggle visual theme">
+          <svg id="theme-icon-dark" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+          <svg id="theme-icon-light" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;" aria-hidden="true">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+        </button>
+
+        <!-- Primary CTA -->
+        <a href="#rfp" class="btn-primary" id="nav-cta-btn">Initiate Partnership</a>
+
+        <!-- Mobile Drawer Toggle -->
+        <button type="button" class="icon-btn mobile-toggle" id="mobile-menu-btn" aria-label="Open mobile navigation">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="4" y1="12" x2="20" y2="12"></line>
+            <line x1="4" y1="6" x2="20" y2="6"></line>
+            <line x1="4" y1="18" x2="20" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <ul class="mobile-nav-links">
+      <li><a href="#modules" class="mobile-nav-item" data-drawer-link>Architecture</a></li>
+      <li><a href="#simulator" class="mobile-nav-item" data-drawer-link>Live Stack</a></li>
+      <li><a href="#cases" class="mobile-nav-item" data-drawer-link>Case Records</a></li>
+      <li><a href="#methodology" class="mobile-nav-item" data-drawer-link>Methodology</a></li>
+      <li><a href="#tiers" class="mobile-nav-item" data-drawer-link>Partnership</a></li>
+      <li><a href="#rfp" class="mobile-nav-item" data-drawer-link>Initiate RFP</a></li>
+    </ul>
+    <button type="button" class="btn-secondary" id="mobile-drawer-close">Close Menu</button>
+  </div>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <canvas id="hero-canvas"></canvas>
+
+      <!-- Multi-axis Orbital SVG Rings -->
+      <div class="orbital-container" aria-hidden="true">
+        <svg class="orbit-svg" viewBox="0 0 800 800" fill="none">
+          <circle cx="400" cy="400" r="180" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 8"/>
+          <circle cx="400" cy="400" r="280" stroke="currentColor" stroke-width="1"/>
+          <circle cx="400" cy="400" r="370" stroke="currentColor" stroke-width="1.2" stroke-dasharray="12 12"/>
+          <circle cx="580" cy="400" r="5" fill="#00F5A0"/>
+          <circle cx="400" cy="120" r="4" fill="#00D8F6"/>
+          <circle cx="210" cy="520" r="4.5" fill="#00F5A0"/>
+        </svg>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-tag" id="hero-tag">
+          <span class="pulsing-dot" aria-hidden="true"></span>
+          <span id="hero-tag-text">Next-Gen Enterprise Web Systems</span>
+        </div>
+
+        <h1 class="hero-headline" id="hero-headline">
+          Architecting the sovereign <span class="italicized">digital frontier.</span>
+        </h1>
+
+        <p class="hero-subheadline" id="hero-subheadline">
+          A private atelier for high-velocity enterprise platforms, hyper-responsive web applications, and mission-critical cloud interfaces. Handcrafted with mathematical precision.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#rfp" class="btn-primary" id="hero-cta-primary">Reserve Project Sprint</a>
+          <a href="#simulator" class="btn-secondary" id="hero-cta-secondary">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span id="hero-cta-secondary-text">Inspect Live Stack</span>
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="stat-card">
+            <span class="stat-value" id="stat1-val">99.999%</span>
+            <span class="stat-label" id="stat1-lbl">Availability SLA</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat2-val">&lt; 3.8ms</span>
+            <span class="stat-label" id="stat2-lbl">Global P99 Latency</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat3-val">240+</span>
+            <span class="stat-label" id="stat3-lbl">Edge PoP Routing</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-value" id="stat4-val">48+</span>
+            <span class="stat-label" id="stat4-lbl">Deployed Systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE TICKER -->
+    <div class="marquee-wrapper" aria-hidden="true">
+      <div class="marquee-track" id="marquee-track">
+        <!-- Rendered via JS -->
+      </div>
+    </div>
+
+    <!-- MISSION / STANDARDS SECTION -->
+    <section class="section" id="mission">
+      <div class="section-container">
+        <span class="section-tag" id="mission-tag">The Argon Standard</span>
+        <h2 class="mission-quote" id="mission-quote">
+          The future of enterprise software is not cookie-cutter boilerplate. It is bespoke digital craftsmanship.
+        </h2>
+
+        <div class="mission-grid">
+          <div class="mission-col">
+            <h3 id="mission-col1-title">Algorithmic Precision</h3>
+            <p id="mission-col1-text">
+              Every millisecond is accounted for. We engineer web experiences with native hardware acceleration, micro-cached assets, and state-of-the-art layout engines.
+            </p>
+          </div>
+          <div class="mission-col">
+            <h3 id="mission-col2-title">Exclusive Engagement</h3>
+            <p id="mission-col2-text">
+              We take on a maximum of three enterprise partnerships each quarter. Every deployment receives senior architectural oversight from Day 0 through global launch.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CORE CAPABILITIES / ARCHITECTURE -->
+    <section class="section" id="modules">
+      <div class="section-container">
+        <span class="section-tag" id="modules-tag">Core Capabilities</span>
+        <h2 class="section-title" id="modules-title">Four Architectural Pillars. Zero Compromise.</h2>
+        <p class="section-subtitle" id="modules-subtitle">
+          Engineered specifically for technology leaders who require distinctive digital presence, unmatched security, and instant response times.
+        </p>
+
+        <div class="modules-grid" id="modules-grid">
+          <!-- Populated dynamically via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE LIVE STACK SIMULATOR -->
+    <section class="section" id="simulator">
+      <div class="section-container">
+        <span class="section-tag" id="sim-tag">Live Interactive Architecture</span>
+        <h2 class="section-title" id="sim-title">Inspect System Topologies in Real-Time.</h2>
+        <p class="section-subtitle" id="sim-subtitle">
+          Select an architecture profile below to inspect simulated throughput, live telemetry, and routing metrics.
+        </p>
+
+        <div class="simulator-panel">
+          <div class="simulator-tabs" id="sim-tabs" role="tablist">
+            <!-- Tabs generated via JS -->
+          </div>
+
+          <div class="sim-content">
+            <div class="sim-left">
+              <h3 class="sim-header-title" id="sim-header-title">FinTech Ultra-Scale</h3>
+              <p class="sim-tagline" id="sim-tagline">High-frequency transaction dashboard & trading portal</p>
+
+              <div class="telemetry-grid" id="telemetry-grid">
+                <!-- Metrics filled via JS -->
+              </div>
+
+              <div class="sim-nodes-box">
+                <div class="sim-nodes-title">
+                  <span class="pulsing-dot" aria-hidden="true"></span>
+                  <span>Active Cluster Nodes</span>
+                </div>
+                <ul class="sim-nodes-list" id="sim-nodes-list">
+                  <!-- Nodes listed via JS -->
+                </ul>
+              </div>
+            </div>
+
+            <div class="sim-visualizer">
+              <div>
+                <canvas class="waveform-canvas" id="waveform-canvas"></canvas>
+                <div class="load-slider-wrapper">
+                  <div class="load-label">
+                    <span>Simulated Load Ingestion:</span>
+                    <span id="load-val-display" style="color:var(--color-primary); font-weight:bold;">120k req/s</span>
+                  </div>
+                  <input type="range" class="load-slider" id="load-slider" min="50" max="600" value="120" aria-label="Simulate Traffic Load">
+                </div>
+              </div>
+              <div style="font-family:var(--font-mono); font-size:0.75rem; color:var(--color-on-surface-faint); margin-top:1.5rem; border-top:1px solid var(--color-border); padding-top:1rem;">
+                TLS 1.3 Handshake: Verified • P99 Drift: &lt; 0.2ms
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CASE RECORDS -->
+    <section class="section" id="cases">
+      <div class="section-container">
+        <span class="section-tag" id="cases-tag">Case Records</span>
+        <h2 class="section-title" id="cases-title">Engineered for Market Leaders.</h2>
+        <p class="section-subtitle" id="cases-subtitle">
+          Selected enterprise records demonstrating sovereign digital architecture delivered on budget and ahead of schedule.
+        </p>
+
+        <div class="cases-grid" id="cases-grid">
+          <!-- Filled via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- METHODOLOGY / PROTOCOL -->
+    <section class="section" id="methodology">
+      <div class="section-container">
+        <span class="section-tag" id="method-tag">Engineering Protocol</span>
+        <h2 class="section-title" id="method-title">From Initial Blueprint to Global Edge.</h2>
+
+        <div class="timeline-steps" id="timeline-steps">
+          <!-- Steps generated via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTNERSHIP TIERS -->
+    <section class="section" id="tiers">
+      <div class="section-container">
+        <div style="text-align: center;">
+          <span class="section-tag" id="tiers-tag">Partnership Framework</span>
+          <h2 class="section-title" id="tiers-title">Structured for Meaningful Collaboration.</h2>
+          
+          <!-- Billing Cycle Switch -->
+          <div class="tier-toggle-wrapper">
+            <span class="tier-toggle-label" id="toggle-lbl-q">Sprint Scope</span>
+            <label class="switch-control" for="billing-toggle">
+              <input type="checkbox" id="billing-toggle">
+              <span class="slider-round"></span>
+            </label>
+            <span class="tier-toggle-label" id="toggle-lbl-a">Retainer Scope (15% Efficiency)</span>
+          </div>
+        </div>
+
+        <div class="tiers-grid" id="tiers-grid">
+          <!-- Tiers filled via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- RFP / INITIATE ENGAGEMENT -->
+    <section class="section" id="rfp">
+      <div class="section-container">
+        <div class="rfp-card">
+          <span class="section-tag" id="rfp-tag">Initiate Collaboration</span>
+          <h2 class="section-title" id="rfp-title">Build your flagship digital asset with Antigravity Argon.</h2>
+          <p class="section-subtitle" id="rfp-subtitle">
+            Tell us about your organization and target requirements. We respond with a comprehensive architectural brief within 24 hours.
+          </p>
+
+          <form class="rfp-form" id="rfp-form">
+            <div class="form-group">
+              <label class="form-label" for="rfp-name" id="lbl-rfp-name">Your Name</label>
+              <input type="text" class="form-input" id="rfp-name" required placeholder="e.g. Alexander Vance">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rfp-company" id="lbl-rfp-company">Company / Organization</label>
+              <input type="text" class="form-input" id="rfp-company" required placeholder="e.g. Apex Global Systems">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rfp-email" id="lbl-rfp-email">Corporate Email</label>
+              <input type="email" class="form-input" id="rfp-email" required placeholder="alexander@apexsystems.com">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="rfp-scope" id="lbl-rfp-scope">Project Scope</label>
+              <select class="form-select" id="rfp-scope">
+                <!-- Populated via JS -->
+              </select>
+            </div>
+
+            <div class="form-group form-full">
+              <label class="form-label" for="rfp-budget" id="lbl-rfp-budget">Target Investment Range</label>
+              <select class="form-select" id="rfp-budget">
+                <!-- Populated via JS -->
+              </select>
+            </div>
+
+            <div class="form-group form-full">
+              <label class="form-label" for="rfp-notes" id="lbl-rfp-notes">Project Objectives & Technical Requirements</label>
+              <textarea class="form-textarea" id="rfp-notes" required placeholder="Describe your timeline, current stack, and desired capabilities..."></textarea>
+            </div>
+
+            <div class="form-full" style="display:flex; justify-content:flex-end; margin-top:1rem;">
+              <button type="submit" class="btn-primary" id="rfp-submit-btn" style="min-width: 260px;">
+                Transmit Architectural Request
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="section-container">
+      <div class="footer-top">
+        <div>
+          <div style="display:flex; align-items:center; gap:0.75rem;">
+            <svg viewBox="0 0 32 32" width="24" height="24" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="8" fill="#111622" stroke="rgba(255,255,255,0.15)"/>
+              <circle cx="16" cy="16" r="8.5" stroke="#00F5A0" stroke-width="1.5"/>
+              <circle cx="16" cy="16" r="4.2" stroke="#00D8F6" stroke-width="1.2"/>
+              <circle cx="16" cy="16" r="1.8" fill="#00F5A0"/>
+            </svg>
+            <span style="font-family:var(--font-display); font-weight:var(--fw-bold); letter-spacing:0.14em; text-transform:uppercase;">
+              Antigravity Argon
+            </span>
+          </div>
+          <p class="footer-brand-desc" id="footer-desc">
+            Antigravity Argon is an elite software atelier specializing in high-performance web systems, custom interactive interfaces, and sovereign digital architecture.
+          </p>
+        </div>
+
+        <div>
+          <ul class="footer-links" id="footer-links">
+            <!-- Populated via JS -->
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p id="footer-rights">
+          © 2026 Antigravity Argon Studio. All digital assets, architectural blueprints, and interactive systems reserved.
+        </p>
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span id="footer-status">SYSTEMS OPERATIONAL • EDGE SYNCHRONIZED</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Submission Confirmation Modal -->
+  <div class="modal-overlay" id="success-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-card">
+      <div class="modal-icon-badge" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+      </div>
+      <h3 class="modal-title" id="modal-title">Transmission Confirmed</h3>
+      <p class="modal-desc" id="modal-desc">
+        Your project specification has been logged in our secure intake registry. Reference Code:
+      </p>
+      <div class="modal-ref-box" id="modal-ref-code">ARGON-2026-X99</div>
+      <button type="button" class="btn-primary" id="modal-close-btn" style="width: 100%;">
+        Acknowledge
+      </button>
+    </div>
+  </div>
+
+  <!-- Main JavaScript Logic -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
